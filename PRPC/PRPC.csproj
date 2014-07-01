@@ -1,0 +1,189 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>PRPC</RootNamespace>
+    <AssemblyName>PRPC</AssemblyName>
+    <OutputPath>bin</OutputPath>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2013.2.1219.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Create new PRPC Project\Create new Project.tstest" />
+    <None Include="DBInteractionsws\Create Candidate Cases ws.tstest" />
+    <None Include="DBInteractionsws\import hrservices jar ws.tstest" />
+    <None Include="DBInteractionsws\Login as administrator ws.tstest" />
+    <None Include="DBInteractionsws\Login as SAE1Architect ws.tstest" />
+    <None Include="DBInteractionsws\Update Password ws.tstest" />
+    <None Include="DBInteractionsws\Verify List of Candidates ws.tstest" />
+    <None Include="DBInteractionsws\Verify Persisting in DB using HR Services in ws.tstest" />
+    <None Include="demo\Login as administrator demo.tstest" />
+    <None Include="Reports Schedulingws\Add Report To Category.tstest" />
+    <None Include="Reports Schedulingws\Create new category for Report.tstest" />
+    <None Include="Reports Schedulingws\Schedule Report.tstest" />
+    <None Include="Reports Schedulingws\Schedule Reports and message in ws.tstest" />
+    <None Include="Reports Schedulingws\Set mailid for appuser.tstest" />
+    <None Include="Settings.aiis" />
+    <None Include="Test\call login.tstest" />
+    <None Include="Test\findelements.tstest" />
+    <None Include="Test\test Login as administrator demo.tstest" />
+    <None Include="Test\test verifytext.tstest" />
+    <None Include="weblogic\DBInteractions\Create Candidate Cases.tstest" />
+    <None Include="weblogic\DBInteractions\import hrservices jar.tstest" />
+    <None Include="weblogic\DBInteractions\Login as administrator.tstest" />
+    <None Include="weblogic\DBInteractions\Login as SAE1Architect.tstest" />
+    <None Include="weblogic\DBInteractions\Update Password.tstest" />
+    <None Include="weblogic\DBInteractions\Verify List of Candidates.tstest" />
+    <None Include="weblogic\DBInteractions\Verify Persisting in DB using HR Services.tstest" />
+    <None Include="weblogic\Reports Scheduling\Add Report To Category.tstest" />
+    <None Include="weblogic\Reports Scheduling\Create new category for Report.tstest" />
+    <None Include="weblogic\Reports Scheduling\Schedule Report.tstest" />
+    <None Include="weblogic\Reports Scheduling\Schedule Reports and message.tstest" />
+    <None Include="weblogic\Reports Scheduling\Set mailid for appuser.tstest" />
+    <Compile Include="DBInteractionsws\Login as administrator ws.tstest.cs">
+      <DependentUpon>Login as administrator ws.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="DBInteractionsws\Verify Persisting in DB using HR Services in ws.tstest.cs">
+      <DependentUpon>Verify Persisting in DB using HR Services in ws.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="demo\Login as administrator demo.tstest.cs">
+      <DependentUpon>Login as administrator demo.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Test\findelements.tstest.cs">
+      <DependentUpon>findelements.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Test\test Login as administrator demo.tstest.cs">
+      <DependentUpon>test Login as administrator demo.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Test\test verifytext.tstest.cs">
+      <DependentUpon>test verifytext.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="weblogic\DBInteractions\Login as administrator.tstest.cs">
+      <DependentUpon>Login as administrator.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="weblogic\DBInteractions\Verify Persisting in DB using HR Services.tstest.cs">
+      <DependentUpon>Verify Persisting in DB using HR Services.tstest</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Create new PRPC Project\Create new Project.resx">
+      <DependentUpon>Create new Project.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Create Candidate Cases ws.resx">
+      <DependentUpon>Create Candidate Cases ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\import hrservices jar ws.resx">
+      <DependentUpon>import hrservices jar ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Login as administrator ws.resx">
+      <DependentUpon>Login as administrator ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Login as SAE1Architect ws.resx">
+      <DependentUpon>Login as SAE1Architect ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Update Password ws.resx">
+      <DependentUpon>Update Password ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Verify List of Candidates ws.resx">
+      <DependentUpon>Verify List of Candidates ws.tstest</DependentUpon>
+    </None>
+    <None Include="DBInteractionsws\Verify Persisting in DB using HR Services in ws.resx">
+      <DependentUpon>Verify Persisting in DB using HR Services in ws.tstest</DependentUpon>
+    </None>
+    <None Include="demo\Login as administrator demo.resx">
+      <DependentUpon>Login as administrator demo.tstest</DependentUpon>
+    </None>
+    <None Include="Reports Schedulingws\Add Report To Category.resx">
+      <DependentUpon>Add Report To Category.tstest</DependentUpon>
+    </None>
+    <None Include="Reports Schedulingws\Create new category for Report.resx">
+      <DependentUpon>Create new category for Report.tstest</DependentUpon>
+    </None>
+    <None Include="Reports Schedulingws\Schedule Report.resx">
+      <DependentUpon>Schedule Report.tstest</DependentUpon>
+    </None>
+    <None Include="Reports Schedulingws\Schedule Reports and message in ws.resx">
+      <DependentUpon>Schedule Reports and message in ws.tstest</DependentUpon>
+    </None>
+    <None Include="Reports Schedulingws\Set mailid for appuser.resx">
+      <DependentUpon>Set mailid for appuser.tstest</DependentUpon>
+    </None>
+    <None Include="Test\call login.resx">
+      <DependentUpon>call login.tstest</DependentUpon>
+    </None>
+    <None Include="Test\findelements.resx">
+      <DependentUpon>findelements.tstest</DependentUpon>
+    </None>
+    <None Include="Test\test Login as administrator demo.resx">
+      <DependentUpon>test Login as administrator demo.tstest</DependentUpon>
+    </None>
+    <None Include="Test\test verifytext.resx">
+      <DependentUpon>test verifytext.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Create Candidate Cases.resx">
+      <DependentUpon>Create Candidate Cases.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\import hrservices jar.resx">
+      <DependentUpon>import hrservices jar.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Login as administrator.resx">
+      <DependentUpon>Login as administrator.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Login as SAE1Architect.resx">
+      <DependentUpon>Login as SAE1Architect.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Update Password.resx">
+      <DependentUpon>Update Password.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Verify List of Candidates.resx">
+      <DependentUpon>Verify List of Candidates.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\DBInteractions\Verify Persisting in DB using HR Services.resx">
+      <DependentUpon>Verify Persisting in DB using HR Services.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\Reports Scheduling\Add Report To Category.resx">
+      <DependentUpon>Add Report To Category.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\Reports Scheduling\Create new category for Report.resx">
+      <DependentUpon>Create new category for Report.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\Reports Scheduling\Schedule Report.resx">
+      <DependentUpon>Schedule Report.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\Reports Scheduling\Schedule Reports and message.resx">
+      <DependentUpon>Schedule Reports and message.tstest</DependentUpon>
+    </None>
+    <None Include="weblogic\Reports Scheduling\Set mailid for appuser.resx">
+      <DependentUpon>Set mailid for appuser.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="PRPC" Version="2013.2.1205.0" VsProjectLanguage="CSharp" xmlns="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Condition="true" Project="$(MSBuildExtensionsPath)\Telerik\WebUITestStudio\Telerik.WebUITestStudio.targets" />
+</Project>

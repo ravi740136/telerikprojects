@@ -1,0 +1,56 @@
+URL,Username,Password,APPName,DES,ORGS,Activity_Name,Activity_Data,Locale_Activity_name,Locale_Activity_Data,Symbol_Activity,Symbole_Activity_Data
+http://10.150.111.32:8080/prweb/PRServlet,administrator@pega.com,install,SpisomManew,Catcatcast,NaturalSupernh,IsoCode,"String isoCode[] = {""AOA"",""XOF"",""XDR"",""KWD"",""CLF"",""CHW"",""SSP"",""CLF"",""CHW"",""UYI"",""XBB"",""XBC""};
+    String expectedResult[][] = {
+      
+      {""AOA"",""973"",""2"",""Kwanza""},
+      {""XOF"",""952"",""0"",""CFA Franc BCEAO""},
+      {""XDR"",""960"",""-1"",""SDR (Special Drawing Right)""},
+      {""KWD"",""414"",""3"",""Kuwaiti Dinar""},
+      {""CLF"",""990"",""0"",""Unidad de Fomento""},
+      {""CHW"",""948"",""2"",""WIR Franc""},
+      {""SSP"",""728"",""2"",""South Sudanese Pound""},
+      {""CLF"",""990"",""0"",""Unidad de Fomento""},
+      {""CHW"",""948"",""2"",""WIR Franc""},
+      {""UYI"",""940"",""0"",""Uruguay Peso en Unidades Indexadas (URUIURUI)""},
+      {""XBB"",""956"",""-1"",""Bond Markets Unit European Monetary Unit (E.M.U.-6)""},
+      {""XBC"",""957"",""-1"",""Bond Markets Unit European Unit of Account 9 (E.U.A.-9)""}
+    };
+
+    for(int i = 0; i < isoCode.length; i++){
+
+     System.out.println(pega.getCurrencyProperties(isoCode[i]).getCurrencyCode());
+     System.out.println(pega.getCurrencyProperties(isoCode[i]).getNumericCode());
+     System.out.println(pega.getCurrencyProperties(isoCode[i]).getFractionDigits());
+     System.out.println(pega.getCurrencyProperties(isoCode[i]).getCurrencyName());
+
+    }",Locale_Isocdoe,"java.util.Locale [] locales = {java.util.Locale.CANADA,java.util.Locale.CANADA_FRENCH,java.util.Locale.CHINA,java.util.Locale.FRANCE,java.util.Locale.GERMANY,java.util.Locale.ITALY,java.util.Locale.JAPAN,java.util.Locale.KOREA,
+       java.util.Locale.TAIWAN,java.util.Locale.UK,java.util.Locale.US};
+
+     String [][] code = {
+       
+       {""CAD"",""124"",""2"",""Canadian Dollar""},
+       {""CAD"",""124"",""2"",""Canadian Dollar""},
+       {""CNY"",""156"",""2"",""Yuan Renminbi""},
+       {""EUR"",""978"",""2"",""Euro""},
+       {""EUR"",""978"",""2"",""Euro""},
+       {""EUR"",""978"",""2"",""Euro""},
+       {""JPY"",""392"",""0"",""Yen""},
+       {""KRW"",""410"",""0"",""Won""},
+       {""TWD"",""901"",""2"",""New Taiwan Dollar""},
+       {""GBP"",""826"",""2"",""Pound Sterling""},
+       {""USD"",""840"",""2"",""US Dollar""}
+      };
+  
+
+     for(int i = 0; i < locales.length; i++){
+   
+      System.out.println(pega.getCurrencyProperties(locales[i]).getCurrencyCode());
+      System.out.println(pega.getCurrencyProperties(locales[i]).getNumericCode());
+      System.out.println(pega.getCurrencyProperties(locales[i]).getFractionDigits());
+      System.out.println(pega.getCurrencyProperties(locales[i]).getCurrencyName());
+     }",Symbole_Activity,"System.out.println(pega.getCurrencyProperties(""INR"").getSymbol(new java.util.Locale(""es"", ""IN""))); 
+System.out.println(pega.getCurrencyProperties(""INR"").getSymbol(new java.util.Locale(""en"", ""IN"")));  
+System.out.println(pega.getCurrencyProperties(""USD"").getSymbol());   
+System.out.println(pega.getCurrencyProperties(""USD"").getSymbol(new java.util.Locale(""en"",""US""))); 
+System.out.println(pega.getCurrencyProperties(""USD"").getSymbol(new java.util.Locale(""ja"",""JP""))); 
+System.out.println(pega.getCurrencyProperties(""USD"").getSymbol(new java.util.Locale(""es"",""US"")));"

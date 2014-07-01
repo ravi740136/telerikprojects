@@ -1,0 +1,292 @@
+<html><head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link href="images/pzPegaIcon.ico" rel="SHORTCUT ICON">
+    <title>
+    Welcome to PegaRULES
+    </title>
+    <style>
+
+       @font-face {
+       font-family: 'OpenSans';
+       src: url('webwb/pxfont-OpenSans-Regular.eot');
+       src: url('webwb/pxfont-OpenSans-Regular.eot#iefix') format('embedded-opentype'),
+       url('webwb/pxfont-OpenSans-Regular.woff') format('woff'),
+       url('webwb/pxfont-OpenSans-Regular.ttf') format('truetype'),
+       url('webwb/pxfont-OpenSans-Regular.svg#OpenSansRegular') format('svg');
+       font-weight: 400;
+       font-style: normal;
+      }
+
+      * {
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+      }
+
+      body,
+      input,
+      button {
+        font: 14px/1.5 'OpenSans', arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+      .logo {
+        max-width: 168px;
+        -ms-interpolation-mode: bicubic;
+        }
+
+      body {
+        background: #525559;
+        text-align: center;
+        width: 320px;
+        margin: 6% auto;
+        }
+
+      button,
+      input {
+        width: 100%;
+      }
+
+      h2#version {
+        color: #f2f2f2;
+        font-size: 12px;
+        text-shadow: none;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        }
+
+      #login,
+      #footer {
+        text-align: center;
+        position: relative;
+        }
+
+      .field {
+        margin-bottom: .3em;
+        text-align: left;
+        }
+
+      .field.user {
+        margin-top: 15px;
+        }
+
+      #error {
+        color: #fff;
+        background: #bf441a;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px;
+        }
+
+      label {
+        color: #eee;
+        text-transform: uppercase;
+        font-size: .8em;
+        display: none;
+        }
+
+      #footer {
+        color: #ccc;
+        font-weight: 400;
+        font-size: 11px;
+        padding-top: 50px;
+        }
+
+      input {
+        text-align: left;
+        color: #444;
+        padding: 8px 6px;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+      button {
+        background: #2da2cf;
+        padding: 8px 6px;
+        color: #fff;
+        opacity: .8;
+        border: none;
+        border-radius: 3px;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        cursor: pointer;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        transition: opacity .1s;
+        }
+
+      button:hover {
+        opacity: 1;
+      }
+
+      button:active {
+        background: #5ecbf4;
+      }
+
+      .captchaImg {
+        background: url('/prweb/PRServlet/beEBp4uRVTogorRwSwWqbOtn9IL2fwdI*/!STANDARD?pyActivity=Code-Security.pyGenerateCaptcha') no-repeat 0 0;
+        width: 155px;
+        height: 50px;
+        margin: auto;
+        }
+
+      #do_not_submit_row {
+        display:none;
+        }
+
+   @media screen and (max-width: 640px) {
+          body {
+            padding: 0 10px;
+          }
+
+          input,
+          button {
+            font-size: 18px;
+          }
+      }
+
+
+    </style>
+    <!--[if lte IE 9]>
+      <style>
+        label {
+          display:block;
+          }
+      </style>
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+      <style>
+        input {
+          padding : 8px 0px !important;
+          border : 0px 0px 0px 0px !important;
+          }
+      </style>
+    <![endif]-->
+
+    
+        
+    
+  </head>
+  <body oncontextmenu="return false;" onload="processOnLoad()">
+    
+    
+    
+      <form name="main" action="/prweb/PRServlet/beEBp4uRVTogorRwSwWqbOtn9IL2fwdI*/!STANDARD" method="post" target="_top" novalidate="novalidate">
+    
+    
+      <input name="pzAuth" type="hidden" value="guest">
+      <div id="login">
+        <div id="logoSpan">
+          <img alt="Pega 7" src="webwb/desktopimages/pzpega-7-login.gif">
+          
+            
+              
+              <div class="errorMessage" id="error" style="display: none;" mode="normal">                   The information you entered was not recognized.          </div>
+              
+            
+            
+          
+          <div class="field user">
+            <label>User ID</label>
+            <input name="UserIdentifier" tabindex="1" class="inputBox" id="txtUserID" type="email" size="20" maxlength="128" placeholder="User ID" value="">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input name="Password" tabindex="2" class="inputBox" id="txtPassword" type="password" size="20" placeholder="Password" value="">
+          </div>
+            
+
+            <div id="submit_row" style="visibility: hidden;">
+              <label>&nbsp;</label>
+              <button name="pyActivity=Code-Security.Login" title="Log in to PegaRULES." class="loginButton" id="sub" onclick="removeErrorMessage();" type="submit">
+              <span class="loginButtonText">Log In</span>
+              </button>
+            </div>
+            <div id="do_not_submit_row">
+              <label>&nbsp;</label>
+              <button name="pyActivity=Code-Security.Login" title="Log in to PegaRULES." disabled="" class="loginButton" id="sub_do_not_show" type="button">
+                <span class="loginButtonText">Log In</span>
+              </button>
+            </div>
+
+        </div> <!--/ logoSpan -->
+      </div> <!--/ login -->
+
+  <div id="footer">
+  
+     
+  
+  <div>
+    Pega 7.1.4
+  </div>
+  
+  <div>
+    Not for customer distribution.
+  </div>
+  
+
+  <div>
+    
+    
+    LJAKKRW7BLR pega 2014-05-08 11:29:28.627 GMT
+    <div>
+      coreCode_71HEAD_14422
+    </div>
+   </div>
+  
+
+  <span>
+    Copyright
+    © 2001-2014
+    Pegasystems Inc.
+    All rights reserved.
+  </span>
+  <br>
+  <span>
+    Pegasystems ®
+  </span>
+
+
+  </div> <!-- /footer -->
+
+      </form>
+
+      <!-- B-12380 avoid reuse/repost of username/password -->
+
+      <script type="text/javascript">
+        javascript:window.history.forward(1);
+      </script>
+
+      <script>
+        function removeErrorMessage() {
+          document.getElementById('submit_row').style.visibility = 'hidden';
+          document.getElementById('do_not_submit_row').style.visibility = '';
+          var error = document.getElementById("error");
+          if(error) {
+            error.style.display = "none";
+          }
+        }
+
+        function processOnLoad() {
+          document.getElementById('submit_row').style.visibility = '';
+          document.getElementById('do_not_submit_row').style.visibility = 'hidden';
+          
+          try {
+            document.getElementById("txtUserID").focus();
+          }
+          catch(err){}
+        }
+
+        function changeCaptcha() {
+          var captchaSrc = "/prweb/PRServlet/beEBp4uRVTogorRwSwWqbOtn9IL2fwdI*/!STANDARD?pyActivity=Code-Security.pyGenerateCaptcha"+"&"+(new Date()).getTime();
+          document.getElementById("captchaDiv").style.backgroundImage = "url('"+captchaSrc+"')";
+        }
+      </script>
+  
+</body></html>

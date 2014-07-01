@@ -1,0 +1,118 @@
+<html><head>
+        <link rel="stylesheet" type="text/css" href="ErrorPageTemplate.css">
+
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>Internet Explorer cannot display the webpage</title>
+
+        <script language="javascript" type="text/javascript" src="errorPageStrings.js">
+        </script>
+        <script language="javascript" type="text/javascript" src="httpErrorPagesScripts.js">
+        </script>
+    
+
+    </head><body onload="javascript:initMoreInfo('infoBlockID');">
+
+        <table border="0" cellSpacing="0" cellPadding="0" width="730">
+
+        <!-- Error title -->
+            <tbody><tr>
+                <td id="infoIconAlign" vAlign="top" rowSpan="2" width="60" align="left">
+                    <img id="infoIcon" alt="Info icon" src="noConnect.png" width="48" height="48">
+                </td>
+                <td id="mainTitleAlign" vAlign="middle" width="*" align="left">
+                    <h1 id="mainTitle">Internet Explorer cannot display the webpage</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- This row is for HTTP status code, as well as the divider-->
+                <td id="errorCodeAlign" class="errorCodeAndDivider" align="right">&nbsp;
+                    <div class="divider"></div>
+                </td>
+            </tr>
+
+        <!-- What you can do -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="whatToTryAlign" vAlign="top" align="left">
+                    <h2 id="whatToTry">What you can try:</h2>
+                </td>
+            </tr>
+
+        <!-- Check Connection -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="checkConnectionAlign" vAlign="middle" align="left">
+                    <h4>
+                        <table>
+                            <tbody><tr>
+                                <td vAlign="top">
+                                </td>
+                                <td vAlign="middle">
+                                    <button id="diagnose" onclick="javascript:diagnoseConnectionAndRefresh(); return false;">Diagnose Connection Problems</button>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </h4>
+                </td>
+            </tr>
+
+
+        <!-- InfoBlock -->
+            <tr>
+                <td id="infoBlockAlign" vAlign="top" align="right">
+                    &nbsp;
+                </td>
+                <td id="moreInformationAlign" vAlign="middle" align="left">
+                    <h4>
+                      <table>
+                          <tbody><tr>
+                              <td vAlign="top">
+                                  <a onclick="javascript:expandCollapse('infoBlockID', true); return false;" href="#"><img id="infoBlockIDImage" class="actionIcon" border="0" alt="More information" src="down.png"></a>
+                              </td>
+                              <td vAlign="top">
+                                  <span id="moreInfoContainer"><a href="javascript:expandCollapse('infoBlockID', true);">More information</a></span>
+                                  <noscript>&lt;ID id="moreInformation"&gt;More information&lt;/ID&gt;</noscript>
+                              </td>
+                          </tr>
+                      </tbody></table>
+                    </h4>
+                    <div style="display: none;" id="infoBlockID" class="infoBlock">
+                        <p>
+                            <id id="errorExpl1">This problem can be caused by a variety of issues, including:</id>
+                            <ul>
+                                <li id="errorExpl2">Internet connectivity has been lost.</li>
+                                <li id="errorExpl3">The website is temporarily unavailable.</li>
+                                <li id="errorExpl4">The Domain Name Server (DNS) is not reachable.</li>
+                                <li id="errorExpl5">The Domain Name Server (DNS) does not have a listing for the website's domain.</li>
+                                <li id="errorExpl7">There might be a typing error in the address.</li> 
+                                <li id="errorExpl6">If this is an HTTPS (secure) address, click Tools, click Internet Options, click Advanced, and check to be sure the SSL and TLS protocols are enabled under the security section.</li>
+                            </ul>
+                        <p></p>
+                        <p id="offlineUsers"><b>For offline users</b></p>                                     
+                        <p id="viewSubscribedFeeds1">
+                            You can still view subscribed feeds and some recently viewed webpages.<br>
+                            To view subscribed feeds:
+                            <ol>
+                                <li id="viewSubscribedFeeds2">Click the Favorites button <img border="0" src="favcenter.png">, click <b>Feeds</b>, and then click the feed you want to view.</li>
+                            </ol>
+                        <p></p>
+                        <p id="viewRecentWebpages1">To view recently visited webpages (might not work on all pages):
+                            <ol>
+                                <li id="viewRecentWebpages2">Press Alt, click <b>File</b>, and then click <b>Work Offline</b>.</li>
+                                <li id="viewRecentWebpages3">Click the Favorites button <img border="0" src="favcenter.png">, click <b>History</b>, and then click the page you want to view.</li>
+                            </ol>
+                        <p></p>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody></table>
+
+    
+
+</body></html>
